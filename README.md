@@ -11,28 +11,28 @@ This project provides a customized version of the PyDIC library, specifically ad
 # Installation & Setup
 To ensure all dependencies are correctly installed, run the following command in your VS Code terminal:
 
-Bash
-# For Windows users (Recommended)
+**For Windows (Recommended)**
+``` Bash
 py -m pip install numpy scipy matplotlib opencv-python opencv-contrib-python
-
-# For Mac/Linux users
+```
+**For Mac/Linux users**
+``` Bash
 pip install numpy scipy matplotlib opencv-python opencv-contrib-python
-📸 Experimental Procedure
-Specimen Prep: Apply white primer and black spray speckles.
-
-Recording: Set up a primary high-res camera on a tripod. Use a secondary phone to capture the UTM load display and a timer for synchronization.
-
-Data Extraction: Extract 6 high-quality original frames (not screenshots!) representing different load stages.
-
-Metadata: Create a meta-data.txt in the img/ folder with columns: image_file, load(N), and time(s).
+```
+**Experimental Procedure**
+1. Specimen Prep: Apply white primer and black spray speckles.
+2. Recording: Set up a primary high-res camera on a tripod. Use a secondary phone to capture the UTM load display and a timer for synchronization.
+3. Data Extraction: Extract 6 high-quality original frames (not screenshots!) representing different load stages.
+4. Metadata: Create a meta-data.txt in the img/ folder with columns: image_file, load(N), and time(s).
 
 # How to Run
 Place your images and meta-data.txt in the img/ directory.
 
 Run the script:
 
-Bash
+```Bash
 py main.py
+```
 Interactive Masking: When the first window pops up, click the Top-Left and Bottom-Right corners of the hole noise.
 
 Results: Close all pop-up windows to see the calculated Young's Modulus (E) and Poisson's Ratio (ν) in your terminal.
