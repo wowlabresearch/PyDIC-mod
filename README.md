@@ -37,6 +37,9 @@ Interactive Masking: When the first window pops up, click the Top-Left and Botto
 
 Results: Close all pop-up windows to see the calculated Young's Modulus (E) and Poisson's Ratio (ν) in your terminal.
 
+# Results Example
+
+
 # Credits & License
 This version is a modified fork of PyDIC (Original source: https://gitlab.com/damien.andre/pydic).
 
