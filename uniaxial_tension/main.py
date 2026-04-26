@@ -300,9 +300,9 @@ nominal_strain_yy_list = np.array(nominal_strain_yy_list)
 # ============================================================
 # [실습] 응력 집중 계수 (Kt) 계산
 # 아래 변수들을 활용하여 Kt를 직접 계산하여 보고서에 기술:
-#   peak_strain_yy_list   : 각 프레임의 최대 국부 변형률 (구멍 주변, 95th pct)
-#   nominal_strain_yy_list: 각 프레임의 공칭 변형률 (far-field 평균)
-#   Kt = ε_peak / ε_nominal
+#   peak_strain_yy_list   : 각 프레임의 최대 국부 변형률 
+#   nominal_strain_yy_list: 각 프레임의 공칭 변형률 
+#   Kt = ??
 # ============================================================
 
 # Direct Kt calculation (last frame)
