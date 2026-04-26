@@ -38,7 +38,8 @@ Interactive Masking: When the first window pops up, click the Top-Left and Botto
 Results: Close all pop-up windows to see the calculated Young's Modulus (E) and Poisson's Ratio (ν) in your terminal.
 
 # Results Example
-
+![xxStrain](./uniaxial_tension/data-example/Figure_1.png)
+![yyStrain](./uniaxial_tension/data-example/Figure_2.png)
 
 # Credits & License
 This version is a modified fork of PyDIC (Original source: https://gitlab.com/damien.andre/pydic).
