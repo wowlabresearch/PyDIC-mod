@@ -44,7 +44,7 @@ def open_video_with_fallback(candidates, base_dir):
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, ".."))
 
-output_dir = os.path.join(PROJECT_ROOT, "uniaxial-tension", "img")
+output_dir = os.path.join(PROJECT_ROOT, "uniaxial_tension", "img")
 target_count = 6
 
 os.makedirs(output_dir, exist_ok=True)
