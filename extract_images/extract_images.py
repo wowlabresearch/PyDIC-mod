@@ -115,12 +115,18 @@ while True:
         break
 
     if frame_idx in target_set:
+        timestamp_sec = frame_idx / fps
+        m = int(timestamp_sec // 60)
+        s = timestamp_sec % 60
+        timestamp_str = f"{m:02d}m{s:05.2f}s"
+
         output_path = os.path.join(
             output_dir,
-            f"{saved_idx:02d}.jpg"
+            f"{saved_idx:02d}_{timestamp_str}.jpg"
         )
 
         cv2.imwrite(output_path, frame)
+        print(f"  [{saved_idx:02d}] frame {frame_idx:6d}  ->  {timestamp_str}  ->  {os.path.basename(output_path)}")
         saved_idx += 1
 
         if saved_idx == target_count:
@@ -130,5 +136,4 @@ while True:
 
 cap.release()
 
-print(f"Saved {saved_idx} frames to '{output_dir}'")
-print(f"Target frame indices: {target_indices}")
+print(f"\nSaved {saved_idx} frames to '{output_dir}'")
